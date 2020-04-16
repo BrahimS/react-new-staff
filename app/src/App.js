@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Toggle from "./RpcToggle";
 import Portal from "./Portal";
-import TestHook from "./Card";
+import TestHook from "./Hooks/useState";
+import TestHookMemo from "./Hooks/useMemo";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
@@ -120,6 +121,7 @@ export default class App extends Component {
 					</Toggle>
 					<Card />
 					<TestHook />
+					<TestHookMemo />
 					<Portal>
 						<p>
 							Culpa ullamco non deserunt officia. Proident sunt sit elit
